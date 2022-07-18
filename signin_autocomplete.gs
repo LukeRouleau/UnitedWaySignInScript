@@ -43,8 +43,8 @@ var firstRow = 2;
 // Add a button to the tool
 function onOpen() {
   console.log("Opened the sheet.");
-  SpreadsheetApp.getUi();
-  ui.createMenu('Auto-Complete')
+  SpreadsheetApp.getUi()
+  .createMenu('Auto-Complete')
   .addItem('Run', 'autoComplete')
   .addToUi();
 };
